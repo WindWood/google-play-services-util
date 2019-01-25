@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.GoogleApiAvailability
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -40,6 +41,11 @@ class MainActivity : AppCompatActivity() {
 
         val errorCode = apiAvailability.isGooglePlayServicesAvailable(this)
         val errorString = apiAvailability.getErrorString(errorCode)
+
+        if (errorCode != ConnectionResult.SUCCESS) {
+            Log.w(LOG_TAG, errorCode.toString());
+            Log.w(LOG_TAG, errorString);
+        }
 
         tvOutput.text = errorString
     }
