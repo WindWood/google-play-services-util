@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Google Play 服务工具</string>
+    <string name="app_about">本应用诊断Google Play Service不能使用的原因.\n\n 很多手机不能使用Google Play Services，根据不同的原因，解决方案也有多种。本应用试图给出最小解决方案。\n\n创意来自：[确保用户的设备里安装了正确的Google Play services APK](https://developers.google.com/android/guides/setup#ensure_devices_have_the_google_play_services_apk) ，因为用户设备里可能没有安装Google Play Services程序，或者不是最新的。</string>
+    <string name="btn_play_services">Play 服务信息</string>
+    <string name="btn_play_store">Play 商店信息</string>
+    <string name="btn_about">关于本应用</string>
+    <string name="google_play_services_app_name">Google Play 服务</string>
+    <string name="google_play_store_app_name">Google Play 商店</string>
+    <string name="google_services_framework_app_name">Google 服务框架</string>
+    <string name="package_status_installed">已安装</string>
+    <string name="package_status_missing">缺失</string>
+    <string name="package_status_uncheck">未检测</string>
+    <string name="solution">SUCCESS: 恭喜！可以正常使用了.\n\nSERVICE_MISSING: 本机没有安装 Google Play services，使用 Google Play Store 来安装.\n\nSERVICE_UPDATING: Google Play service 正在更新，请耐心等待.\n\nSERVICE_VERSION_UPDATE_REQUIRED: Google Play services 的版本落后了，使用 Google Play Store 进行更新.\n\nSERVICE_DISABLED: Google Play services 被禁用了，到系统应用设置去启用.\n\nSERVICE_INVALID: 无法验证本机 Google Play services 的版本，通常是因为没有安装 Google Play Store.</string>
+</resources>

@@ -1,6 +1,17 @@
 <resources>
     <string name="app_name">Google Play Services Util</string>
+    <string name="app_about">本应用诊断Google Play Service不能使用的原因.\n\n 很多手机不能使用Google Play Services，根据不同的原因，解决方案也有多种。本应用试图给出最小解决方案。\n\n创意来自：[确保用户的设备里安装了正确的Google Play services APK](https://developers.google.com/android/guides/setup#ensure_devices_have_the_google_play_services_apk) ，因为用户设备里可能没有安装Google Play Services程序，或者不是最新的。</string>
     <string name="btn_play_services">Play Services Info</string>
     <string name="btn_play_store">Play Store Info</string>
     <string name="btn_about">About</string>
+    <string name="google_play_services_app_name">Google Play Services</string>
+    <string name="google_play_services_package_name" translatable="false">com.google.android.gms</string>
+    <string name="google_play_store_app_name">Google Play Store</string>
+    <string name="google_play_store_package_name" translatable="false">com.android.vending</string>
+    <string name="google_services_framework_app_name">Google Services Framework</string>
+    <string name="google_services_framework_package_name" translatable="false">com.google.android.gsf</string>
+    <string name="package_status_installed">installed</string>
+    <string name="package_status_missing">missing</string>
+    <string name="package_status_uncheck">uncheck</string>
+    <string name="solution">SUCCESS: Nothing need to do.\n\nSERVICE_MISSING: Google Play services is missing on this device. Need Google Play Store to install it.\n\nSERVICE_UPDATING: Google Play service is currently being updated on this device. Just wait.\n\nSERVICE_VERSION_UPDATE_REQUIRED: The installed version of Google Play services is out of date. Need Google Play Store to update it.\n\nSERVICE_DISABLED: The version of Google Play services installed on this device has been disabled. Go to system settings and enable it.\n\nSERVICE_INVALID: The version of the Google Play services installed on this device is not authentic. Install Google Play Store first.</string>
 </resources>
