@@ -2,6 +2,7 @@ package cn.windwood.apps.googleplayservicesutil
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import com.google.android.gms.common.GoogleApiAvailability
 import kotlinx.android.synthetic.main.activity_main.*
@@ -21,6 +22,26 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        detectGoogleServices()
+    }
+
+    private fun detectGoogleServices() {
+        Log.i(
+            LOG_TAG,
+            "GOOGLE_PLAY_SERVICES_VERSION_CODE = $GOOGLE_PLAY_SERVICES_VERSION_CODE"
+        )
+
+        val apiAvailability = GoogleApiAvailability.getInstance()
+
+        val errorCode = apiAvailability.isGooglePlayServicesAvailable(this)
+        val errorString = apiAvailability.getErrorString(errorCode)
+
+        tvOutput.text = errorString
     }
 
     fun servicesInfo(view: View) {
